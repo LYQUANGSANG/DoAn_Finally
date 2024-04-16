@@ -1,0 +1,44 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::table('users', function (Blueprint $table) {
+            $table->string('uer_name')->nullable()->change();
+            $table->string('avatar')->nullable()->change();
+            $table->string('ins_date')->nullable()->change();
+            $table->string('isAdmin')->nullable()->change();
+        });
+
+        Schema::table('purchase_order', function (Blueprint $table) {
+            $table->integer('order_status')->default(0)->change();
+            $table->integer('payment_status')->default(0)->change();
+            $table->string('ins_date')->nullable()->change();
+        });
+
+        Schema::table('products', function (Blueprint $table) {
+            $table->integer('isnew')->default(0)->change();
+            $table->integer('status')->default(0)->change();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        //
+    }
+};

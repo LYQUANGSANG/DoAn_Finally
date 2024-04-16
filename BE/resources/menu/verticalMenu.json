@@ -1,0 +1,34 @@
+{
+  "menu": [
+    {
+      "url": "/",
+      "name": "Dashboards",
+      "icon": "menu-icon tf-icons mdi mdi-home-outline",
+      "slug": "dashboard"
+    },
+    {
+      "url": "/users",
+      "name": "Users",
+      "icon": "menu-icon tf-icons mdi mdi-account-box-outline",
+      "slug": "dashboard"
+    },
+    {
+      "url": "/categories",
+      "name": "Categories",
+      "icon": "menu-icon tf-icons mdi mdi-align-horizontal-left",
+      "slug": "dashboard"
+    },
+    {
+      "url": "/products",
+      "name": "Products",
+      "icon": "menu-icon tf-icons mdi mdi-shopping-outline",
+      "slug": "dashboard"
+    },
+    {
+      "url": "/orders",
+      "name": "Orders",
+      "icon": "menu-icon tf-icons mdi mdi-cart-outline",
+      "slug": "dashboard"
+    }
+  ]
+}
